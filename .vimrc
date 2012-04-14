@@ -76,3 +76,4 @@ set complete-=k complete+=k
 "字典
 autocmd! bufwritepost .vimrc source ~/.vimrc
 "定义了一个自动命令，每次写入.vimrc后，都会执行这个自动命令，source一次~/.vimrc文件
+let mapleader = ","
