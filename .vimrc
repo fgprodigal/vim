@@ -51,14 +51,10 @@ set laststatus=2
 set encoding=utf-8
 "选择编码
 set langmenu=zh_CN.UTF-8
-language message zh_CN.UTF-8
+language messages zh_CN.utf-8
 "避免windows下gvim菜单和系统提示乱码
-set fileencodings=ucs-bom,utf-8,utf-16,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,chinese,latin-1   
 "自动识别编码，正确显示中文
-set guifont=Courier:h14
-"设置双字节字体
-set guifontwide=Courier:h14
-"设置单字节字体
 set wrap
 "自动换行
 set linespace=2
@@ -77,3 +73,21 @@ set complete-=k complete+=k
 autocmd! bufwritepost .vimrc source ~/.vimrc
 "定义了一个自动命令，每次写入.vimrc后，都会执行这个自动命令，source一次~/.vimrc文件
 let mapleader = ","
+
+if has("win32")
+	set fileencoding=chinese
+	au GUIEnter * simalt ~x
+	set guifont=Courier\ New:h10
+	"设置双字节字体
+	set guifontwide=Courier\ New:h10
+	"设置单字节字体
+else
+	set fileencoding=utf-8
+	set guifont=Courier:h14
+	"设置双字节字体
+	set guifontwide=Courier:h14
+	"设置单字节字体
+endif
+"解决菜单乱码   
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
