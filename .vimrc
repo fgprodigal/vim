@@ -89,9 +89,9 @@ autocmd VimEnter * NERDTree
 
 if has("win32")
 	au GUIEnter * simalt ~x
-	set guifont=Courier\ New:h10
+	set guifont=Consolas:h10
 	"设置双字节字体
-	set guifontwide=Courier\ New:h10
+	set guifontwide=Consolas:h10
 	"设置单字节字体
 	let $VIMFILES = $VIM.'/.vim'
 	let $V = $VIM.'/.vimrc'
