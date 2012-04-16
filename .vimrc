@@ -84,8 +84,8 @@ set fileencoding=utf-8
 map <C-s> :w<CR>
 imap <C-s> <C-o>:w<CR>
 "保存快捷键
-autocmd VimEnter * NERDTree
-"自动打开NERDTree
+map <F6> :NERDTreeToggle<CR>
+"NERDTree快捷键
 
 if has("win32")
 	au GUIEnter * simalt ~x
