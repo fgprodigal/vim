@@ -1,3 +1,5 @@
+﻿set runtimepath=$VIM/.vim,$HOME/.vim,$VIMRUNTIME
+"runtimepath
 filetype plugin on
 "开启插件
 set nocompatible
@@ -57,36 +59,42 @@ set fileencodings=utf-8,chinese,latin-1
 "自动识别编码，正确显示中文
 set wrap
 "自动换行
-set linespace=2
+set linespace=3
 "设置行高
 colorscheme slate
 "设置颜色主题
-"set lines=50 columns=128
-"设置macvim窗口大小
 set helplang=cn
 "帮助文档设置中文
 set foldmethod=manual
 "折叠
-au FileType lua setlocal dictionary+=~/.vim/dict/wowlua.dict
+au FileType lua setlocal dictionary+=$VIMFILES/dict/wowlua.dict
 set complete-=k complete+=k
 "字典
-autocmd! bufwritepost .vimrc source ~/.vimrc
-"定义了一个自动命令，每次写入.vimrc后，都会执行这个自动命令，source一次~/.vimrc文件
+autocmd! bufwritepost .vimrc source $V
+"每次写入.vimrc后，source一次~/.vimrc文件
 let mapleader = ","
+"mapleader
+set ignorecase smartcase
+"搜索时默认不区分大小写，只有搜索关键字中出现一个大字母时才区分大小写
+set so=3
+"光标在窗口上下边界时距离边界7行即开始滚屏
+set fileencoding=utf-8
 
 if has("win32")
-	set fileencoding=chinese
 	au GUIEnter * simalt ~x
 	set guifont=Courier\ New:h10
 	"设置双字节字体
 	set guifontwide=Courier\ New:h10
 	"设置单字节字体
+	let $VIMFILES = $VIM.'/.vim'
+	let $V = $VIM.'/.vimrc'
 else
-	set fileencoding=utf-8
 	set guifont=Courier:h14
 	"设置双字节字体
 	set guifontwide=Courier:h14
 	"设置单字节字体
+	let $VIMFILES = $HOME.'/.vim'
+	let $V = $HOME.'/.vimrc'
 endif
 "解决菜单乱码   
 source $VIMRUNTIME/delmenu.vim
