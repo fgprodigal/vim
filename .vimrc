@@ -1,5 +1,6 @@
 ﻿set runtimepath=$VIM/.vim,$HOME/.vim,$VIMRUNTIME
 "runtimepath
+call pathogen#runtime_append_all_bundles()
 filetype plugin on
 "开启插件
 set nocompatible
@@ -83,6 +84,8 @@ set fileencoding=utf-8
 map <C-s> :w<CR>
 imap <C-s> <C-o>:w<CR>
 "保存快捷键
+autocmd VimEnter * NERDTree
+"自动打开NERDTree
 
 if has("win32")
 	au GUIEnter * simalt ~x
