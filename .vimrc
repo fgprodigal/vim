@@ -79,6 +79,10 @@ set ignorecase smartcase
 set so=3
 "光标在窗口上下边界时距离边界7行即开始滚屏
 set fileencoding=utf-8
+"编码
+map <C-s> :w<CR>
+imap <C-s> <C-o>:w<CR>
+"保存快捷键
 
 if has("win32")
 	au GUIEnter * simalt ~x
