@@ -25,6 +25,7 @@ set showmatch
 set ruler
 "打开状态栏标尺
 set incsearch
+set hlsearch
 "实时显示搜索结果
 set scrolloff=3
 "当光标与顶部距离为三行时发生翻滚，且翻滚后光标与底部相距三行
