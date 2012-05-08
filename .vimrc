@@ -62,7 +62,8 @@ set wrap
 "自动换行
 set linespace=3
 "设置行高
-colorscheme slate
+"colorscheme slate
+colorscheme molokai
 "设置颜色主题
 set helplang=cn
 "帮助文档设置中文
