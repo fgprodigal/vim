@@ -1,4 +1,4 @@
-﻿set runtimepath=$VIM/.vim,$HOME/.vim,$VIMRUNTIME
+﻿set runtimepath=$VIM/.vim,$HOME/.vim,$VIMRUNTIME,$VIM/.vim/after,$HOME/.vim/after
 "runtimepath
 call pathogen#runtime_append_all_bundles()
 filetype plugin on
