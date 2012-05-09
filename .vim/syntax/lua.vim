@@ -3938,6 +3938,19 @@ syn keyword luaWoWWidget UpdateBlips
 syn keyword luaWoWWidget UpdateColorByID
 syn keyword luaWoWWidget UpdateMouseOverTooltip
 syn keyword luaWoWWidget UpdateScrollChildRect
+syn keyword luaWoWRayUIAPI Size
+syn keyword luaWoWRayUIAPI Width
+syn keyword luaWoWRayUIAPI Height
+syn keyword luaWoWRayUIAPI Point
+syn keyword luaWoWRayUIAPI CreateShadow
+syn keyword luaWoWRayUIAPI SetTemplate
+syn keyword luaWoWRayUIAPI CreateBorder
+syn keyword luaWoWRayUIAPI StyleButton
+syn keyword luaWoWRayUIAPI CreatePanel
+syn keyword luaWoWRayUIAPI Kill
+syn keyword luaWoWRayUIAPI FadeIn
+syn keyword luaWoWRayUIAPI FadeOut
+syn keyword luaWoWRayUIAPI StripTextures
 
 
 if lua_version == 4
@@ -4126,6 +4139,7 @@ if version >= 508 || !exists("did_lua_syntax_inits")
   HiLink luaWoWAPI		Identifier
   HiLink luaWoWEvent            SpecialChar
   HiLink luaWoWWidget		Identifier
+  HiLink luaWoWRayUIAPI		Identifier
 
   delcommand HiLink
 endif
