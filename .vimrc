@@ -192,4 +192,4 @@ endfunction
 
 let g:user_zen_expandabbr_key = '<c-return>'
 let g:use_zen_complete_tag = 1
-"设置zen coding为ctrl+e展开
+"设置zen coding为ctrl+return展开
