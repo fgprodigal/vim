@@ -72,6 +72,7 @@ set helplang=cn
 set foldmethod=manual
 "折叠
 au FileType lua setlocal dictionary+=$VIMFILES/dict/wowlua.dict
+au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 set complete-=k complete+=k
 "字典
 autocmd! bufwritepost .vimrc source $V
@@ -89,6 +90,12 @@ imap <C-s> <C-o>:w<CR>
 "保存快捷键
 map <F6> :NERDTreeToggle<CR>
 "NERDTree快捷键
+set foldmethod=indent
+"缩进作为折叠标识  
+set foldlevel=100
+"不自动折叠 
+map <space> za
+"空格折叠
 
 if has("win32")
 	au GUIEnter * simalt ~x
