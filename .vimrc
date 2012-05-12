@@ -106,6 +106,7 @@ if has("win32")
 	let $VIMFILES = $VIM.'/.vim'
 	let $V = $VIM.'/.vimrc'
 else
+    au GUIEnter * set fullscreen
 	set guifont=Courier:h14
 	"设置双字节字体
 	set guifontwide=Courier:h14
