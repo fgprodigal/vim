@@ -86,7 +86,6 @@ set so=3
 set fileencoding=utf-8
 "编码
 map <C-s> :w<CR>
-imap <C-s> <C-o>:w<CR>
 "保存快捷键
 map <F6> :NERDTreeToggle<CR>
 "NERDTree快捷键
@@ -201,3 +200,19 @@ endfunction
 let g:user_zen_expandabbr_key = '<c-return>'
 let g:use_zen_complete_tag = 1
 "设置zen coding为ctrl+return展开
+
+function ShortTabLabel ()
+    let bufnrlist = tabpagebuflist (v:lnum)
+    let label = bufname (bufnrlist[tabpagewinnr (v:lnum) -1])
+    let filename = fnamemodify (label, ':t')
+    return filename
+endfunction
+set guitablabel=%{ShortTabLabel()}
+"标签名
+
+map <C-Right> :tabnext<CR>
+map <C-Left>  :tabprevious<CR>
+nmap <C-t> :tabnew<CR>
+imap <C-t> <ESC>:tabnew<CR>
+nmap <C-w> :tabclose<CR>
+"标签快捷键
