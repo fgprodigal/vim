@@ -86,6 +86,7 @@ set so=3
 set fileencoding=utf-8
 "编码
 map <C-s> :w<CR>
+imap <C-s> <C-o>:w<CR>
 "保存快捷键
 map <F6> :NERDTreeToggle<CR>
 "NERDTree快捷键
