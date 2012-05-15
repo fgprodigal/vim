@@ -4,6 +4,7 @@ call pathogen#runtime_append_all_bundles()
 filetype plugin on
 filetype plugin indent on
 "开启插件
+set noswapfile
 set nocompatible
 "不兼容vi模式
 set modelines=0
@@ -105,6 +106,7 @@ if has("win32")
 	"设置单字节字体
 	let $VIMFILES = $VIM.'/.vim'
 	let $V = $VIM.'/.vimrc'
+	set shellslash
 else
     au GUIEnter * set fullscreen
 	set guifont=Courier:h14
