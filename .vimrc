@@ -72,6 +72,7 @@ set helplang=cn
 "帮助文档设置中文
 set foldmethod=manual
 "折叠
+au FileType php setlocal dictionary+=$VIMFILES/dict/php.dict
 au FileType lua setlocal dictionary+=$VIMFILES/dict/wowlua.dict
 au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
 set complete-=k complete+=k
