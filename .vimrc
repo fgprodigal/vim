@@ -75,6 +75,7 @@ set foldmethod=manual
 au FileType php setlocal dictionary+=$VIMFILES/dict/php.dict
 au FileType lua setlocal dictionary+=$VIMFILES/dict/wowlua.dict
 au BufRead,BufNewFile *.js set ft=javascript syntax=jquery
+au BufRead,BufNewFile *.aspx,*.asmx,*.ascx set filetype=aspnet
 set complete-=k complete+=k
 "字典
 autocmd! bufwritepost .vimrc source $V
