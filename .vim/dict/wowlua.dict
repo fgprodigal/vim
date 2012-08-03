@@ -140,7 +140,9 @@ C_LootHistory.GiveMasterLoot
 C_LootHistory.SetExpiration
 C_PetBattles.AcceptPVPDuel
 C_PetBattles.AcceptPVPMatch
+C_PetBattles.CanActivePetSwapOut
 C_PetBattles.CancelPVPDuel
+C_PetBattles.CanPetSwapIn
 C_PetBattles.ChangePet
 C_PetBattles.DeclinePVPMatch
 C_PetBattles.ForfeitGame
@@ -176,7 +178,6 @@ C_PetBattles.GetStateValue
 C_PetBattles.GetTurnTimeInfo
 C_PetBattles.GetXP
 C_PetBattles.IsInBattle
-C_PetBattles.IsPetSwapAvailable
 C_PetBattles.IsPlayerNPC
 C_PetBattles.IsSkipAvailable
 C_PetBattles.IsTrapAvailable

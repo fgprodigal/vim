@@ -267,7 +267,9 @@ syn keyword luaWoWAPI C_LootHistory.GiveMasterLoot
 syn keyword luaWoWAPI C_LootHistory.SetExpiration
 syn keyword luaWoWAPI C_PetBattles.AcceptPVPDuel
 syn keyword luaWoWAPI C_PetBattles.AcceptPVPMatch
+syn keyword luaWoWAPI C_PetBattles.CanActivePetSwapOut
 syn keyword luaWoWAPI C_PetBattles.CancelPVPDuel
+syn keyword luaWoWAPI C_PetBattles.CanPetSwapIn
 syn keyword luaWoWAPI C_PetBattles.ChangePet
 syn keyword luaWoWAPI C_PetBattles.DeclinePVPMatch
 syn keyword luaWoWAPI C_PetBattles.ForfeitGame
@@ -303,7 +305,6 @@ syn keyword luaWoWAPI C_PetBattles.GetStateValue
 syn keyword luaWoWAPI C_PetBattles.GetTurnTimeInfo
 syn keyword luaWoWAPI C_PetBattles.GetXP
 syn keyword luaWoWAPI C_PetBattles.IsInBattle
-syn keyword luaWoWAPI C_PetBattles.IsPetSwapAvailable
 syn keyword luaWoWAPI C_PetBattles.IsPlayerNPC
 syn keyword luaWoWAPI C_PetBattles.IsSkipAvailable
 syn keyword luaWoWAPI C_PetBattles.IsTrapAvailable
