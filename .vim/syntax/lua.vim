@@ -4258,19 +4258,22 @@ syn keyword luaWoWWidget UpdateColorByID
 syn keyword luaWoWWidget UpdateMouseOverTooltip
 syn keyword luaWoWWidget UpdateScrollChildRect
 
-syn keyword luaWoWRayUIAPI Size
-syn keyword luaWoWRayUIAPI Width
-syn keyword luaWoWRayUIAPI Height
-syn keyword luaWoWRayUIAPI Point
-syn keyword luaWoWRayUIAPI CreateShadow
-syn keyword luaWoWRayUIAPI SetTemplate
 syn keyword luaWoWRayUIAPI CreateBorder
-syn keyword luaWoWRayUIAPI StyleButton
 syn keyword luaWoWRayUIAPI CreatePanel
-syn keyword luaWoWRayUIAPI Kill
+syn keyword luaWoWRayUIAPI CreateShadow
 syn keyword luaWoWRayUIAPI FadeIn
 syn keyword luaWoWRayUIAPI FadeOut
+syn keyword luaWoWRayUIAPI FontTemplate
+syn keyword luaWoWRayUIAPI Height
+syn keyword luaWoWRayUIAPI Kill
+syn keyword luaWoWRayUIAPI Point
+syn keyword luaWoWRayUIAPI SetInside
+syn keyword luaWoWRayUIAPI SetOutside
+syn keyword luaWoWRayUIAPI SetTemplate
+syn keyword luaWoWRayUIAPI Size
 syn keyword luaWoWRayUIAPI StripTextures
+syn keyword luaWoWRayUIAPI StyleButton
+syn keyword luaWoWRayUIAPI Width
 
 
 if lua_version == 4
